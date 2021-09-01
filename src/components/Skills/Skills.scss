@@ -1,0 +1,89 @@
+@import "../../global.scss"; 
+.skills
+{ 
+    background:url(./istockphoto-1169377280-612x612.jpg);
+    display: flex;
+
+
+    h1{
+        font-size: 30px;
+        color: white;
+    
+    
+        @include mobile{
+            font-size: 20px;
+        }
+          }
+
+    .left {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 1.5;
+
+        .item{
+            width: 140px;
+            height: 100px;
+            border-radius: 50px;
+            margin: 1px 7px;
+            border: 1px solid lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+             cursor: pointer;
+             transition: all .5s ease;
+             position: relative;
+    
+                        
+          @include mobile{
+              
+            width: 57px;
+            height: 50px;
+          
+                }
+    
+            &:hover{
+                background-color:  #000;
+                svg{
+                    opacity: .2;
+                    z-index: 0;
+                }
+                h3{
+                    color:white;
+                    opacity: 1;
+                    @include mobile{
+                        font-size: 12px;
+                        
+                    }
+                }
+            }
+        }
+        h3{
+            position: absolute;
+            font-style: 20px;
+            opacity: 0;
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+}
+    .right{
+        height: auto;
+        flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    @include mobile {
+        height: 50%
+      }
+
+}
+}

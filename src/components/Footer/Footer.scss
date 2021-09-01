@@ -1,0 +1,167 @@
+@import "../../global.scss";
+
+
+.footer{
+    
+    display: flex;
+    margin:10px;
+    color: white;
+        height: 55px;
+        width: 100%;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory ;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        
+        
+
+        .left{
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+
+            .main-button{
+                display: flex;
+                height: 30px;
+                background-color: rgb(0, 28, 85); 
+                border: 2px solid  rgb(78, 27, 27);
+                border-radius: 10px;
+                a{
+                    text-decoration: none;
+                    color:  white;
+                }
+                &:hover{
+                    opacity: .5;
+                    border-radius: 10px;
+                    transform: scale(1.1);
+                }
+
+                @include mobile{
+                    height: fit-content;
+                    font-size: 10px;
+                }
+            }
+                    
+
+            h1{
+            font-size: 20px;
+            }
+
+            
+            @include mobile {
+
+              h1{
+                  //padding: 9px 0;
+                  font-size: 70%;
+              }
+            }
+        }
+
+        .right{
+display: flex;
+            @include mobile{
+                
+                .itemcontainer{
+                 a.d1{
+                     width: 30px;
+                     height: fit-content;
+                 }
+                 a.d2{
+                    width: 30px;
+                    height: fit-content;
+                }
+                a.d3{
+                    width: 30px;
+                    height:fit-content;
+                }
+                a.d4{
+                    width: 30px;
+                    height: fit-content;
+                }
+                 
+                }
+            }
+
+
+
+            
+        .itemcontainer{
+            width: max-content;
+            height: 50px;
+            display:flex;
+            padding: 0 10px;
+            transition: all 3s ease-in;
+                align-items: center;
+                
+                               
+
+                a.d1{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: rgb(78, 27, 27);
+                    color: white;
+                     background-color:rgb(20, 173, 224);
+
+                     &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+                
+                a.d2{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                    color:rgb(0, 126, 245);
+                    background-color: #fff;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+                
+                a.d3{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                    color:red;
+                    background-color: #fff;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+
+                a.d4{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                color: #000;
+                    background-color: #fff;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+
+            .icons{
+            width: 30px;
+            height: 25px;
+
+
+           
+            }
+        }
+
+        }
+}

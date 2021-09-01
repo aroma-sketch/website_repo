@@ -1,0 +1,235 @@
+@import "../../global.scss";
+
+.intro{
+
+//background-color:#101010;
+  background:url(./istockphoto-1167050865-612x612.jpg);
+    display: flex;
+    overflow: hidden ;
+   // background-size: cover;
+
+@include mobile{
+    flex-direction: column;
+    align-items: center;
+}
+
+.left{
+    flex: 0.5;
+    overflow: hidden;
+    
+    .imgcont{
+        width: 450px;
+        height: 450px;
+        border-radius:50% ;
+//background-color: rgb(12, 12, 14);
+  
+
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        float: right;
+        border-color: crimson;
+        border-style: double;
+
+        @include mobile{
+            align-items: start;
+        
+        }
+    }
+    img{
+        height: 100%;
+    
+        
+
+        @include mobile{
+            height: 80%;
+            
+        }
+    }
+
+}
+
+.right{
+   position: relative;
+    flex: 0.5;
+
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+
+        @include mobile{
+            padding-left: 0;
+            align-items: center;
+        }
+
+
+        .itemcontainer{
+            width: max-content;
+            height: 70px;
+            display:flex;
+            transition: all 3s ease-in;
+                align-items: center;
+                margin-left: 15px;
+                margin-bottom: 10px;
+                
+                               
+
+                a.d1{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                    color: white;
+                     background-color:rgb(20, 173, 224);
+
+                     &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+                
+                a.d2{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                    color:rgb(0, 126, 245);
+                    background-color: #fff;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+                
+                a.d3{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                    color:red;
+                    background-color: #fff;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+
+                a.d4{
+                    display: flex;
+                    border-radius: 100px;
+                    border-style: solid;
+                    border-color: white;
+                color: #000;
+                    background-color: #fff;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+
+
+                
+      
+               
+
+        
+        
+        
+            
+
+            .icons{
+            width: 80px;
+            height: 35px;
+
+            }
+        }
+
+        h1{
+            font-style: 60px;
+            margin: 10px 0;
+            font-size: 70px;
+            
+
+            @include mobile{
+                font-size: 40px;
+
+            }
+        }
+
+        h2{
+            font-style: 35px;
+            font-size: 40px;
+            color: #6c757d;
+         
+
+        }
+        h3{
+            font-style: 30px;
+            font-size: 35px;
+
+            
+        @include mobile{
+            font-size: 20px;
+          }
+  
+
+            span{
+                font-size: inherit;
+                color: crimson;
+            }
+
+            .ityped-cursor {
+                animation: blink 1s infinite;
+              }
+      
+              @keyframes blink {
+                  50%{
+                      opacity: 1;
+                  }
+                  100%{
+                      opacity: 0;
+                  }
+        }
+    }
+        
+    }
+     a.ff{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        img{
+            width: 150px;
+            height: 70px;
+            animation: arrowBlink 1s infinite;
+
+            @include mobile{
+                width: 90px;
+                height: 50px;
+                
+        }}
+        p{
+            color:white;
+            padding-left:45px;
+            animation: arrowBlink 1s infinite;
+            }
+
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0.1;
+            }
+            
+        }
+     }
+    
+}
+
+}

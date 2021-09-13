@@ -16,12 +16,16 @@
         }
 
         
-        
-
         .left{
             display: flex;
             flex: 1;
             justify-content: space-between;
+
+             h3{
+                 color:hotpink;
+                 background-color:black;
+                 width: max-content;
+             }
 
             .main-button{
                 display: flex;
@@ -46,14 +50,14 @@
             }
                     
 
-            h1{
+            h1, h3{
             font-size: 20px;
             }
 
             
             @include mobile {
 
-              h1{
+              h1, h3{
                   //padding: 9px 0;
                   font-size: 70%;
               }
@@ -84,9 +88,6 @@ display: flex;
                  
                 }
             }
-
-
-
             
         .itemcontainer{
             width: max-content;

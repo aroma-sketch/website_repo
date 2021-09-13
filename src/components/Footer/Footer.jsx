@@ -1,9 +1,16 @@
-import React from 'react'
-import "./Footer.scss"
+import React ,{useState, useEffect} from 'react';
+import "./Footer.scss";
 import Fade from "react-reveal/Fade";
 import {Twitter,LinkedIn,YouTube,GitHub} from "@material-ui/icons";
 
 const Footer = () => {
+    const [count, setCount] = useState(null);
+    useEffect(() => {
+      fetch("https://api.countapi.xyz/update/aroma2/website/?amount=1")
+        .then((res) => res.json())
+        .then((json) => setCount(json.value));
+    }, []);
+
     return (
         <Fade left>
         <div className="footer" id="footer">
@@ -11,7 +18,10 @@ const Footer = () => {
    
 
             <div className="left">
+                <div className="vc">
                 <h1>MADE WITH 💖 BY AROMA</h1>
+                {count && <h3> {count} VISITORS </h3>}
+                </div>
              <button className="main-button" >  <a href="https://github.com/aroma-sketch"
                  target="_blank  " 
                  >⭐star me on github</a> </button>

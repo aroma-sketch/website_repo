@@ -1,12 +1,12 @@
 @import "../../global.scss";
 
 .contact{
-  //background-color:rgb(36, 36, 36);
-  background:url(./istockphoto-1147391889-612x612.jpg);
+   background:url(./istockphoto-1147391889-612x612.jpg);
   display: flex;
   background-size: cover;
   flex-direction: column;
   justify-content: space-between;
+  
   
 
   @include mobile {

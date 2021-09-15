@@ -4,7 +4,7 @@ import Intro from "./components/Intro/Intro";
 import Edu from "./components/Education/Edu";
 import "./App.scss"
 import Skills from "./components/Skills/Skills"
-import Projects from "./components/Projects/Projects";
+import Project2 from "./components/Project2/Project2";
 import Contact from "./components/Contact/Contact";
 import Menu from "./components/Menu/Menu";
 //import { Menu } from "@material-ui/core";
@@ -24,8 +24,9 @@ const App = () => {
            
             <Intro/>
             <Edu/>      
-          <Skills/>
-            <Projects/>
+            <Skills/>
+            <Project2/>
+            
             <Contact/>
             </div>
         

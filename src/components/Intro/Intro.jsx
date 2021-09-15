@@ -76,7 +76,7 @@ const Intro = () => {
                     </motion.div>
                 </div>
 
-                <a href="#edu" className="ff">
+                <a href="#project2" className="ff">
                     <img src="u/h.png" alt="go to project as section"/>
                     {/* <p>scroll down</p> */}
                 </a>

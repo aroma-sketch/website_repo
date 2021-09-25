@@ -36,7 +36,7 @@ export const Project2 = () => {
          <div className="cards">
            <img style={{height: "100px",width:"200px"}} src=" https://user-images.githubusercontent.com/78024790/133394344-356f17a4-d2f0-46df-8d06-23d162e70f12.png"/>
          <h2>VISITORS COUNTER PAGE
-           <p>simple html website count the nunmber of visitors</p>
+           <p>simple html website count the no. of visitors</p>
            <a href="https://aroma-sketch.github.io/Visitors-count-/" target="_blank"><button>VIEW PROJECT</button></a>
            </h2>
          </div>
@@ -51,6 +51,16 @@ export const Project2 = () => {
             </h2>
      
           </div>
+         </Fade>
+
+         <Fade left>
+         <div className="cards">
+           <img style={{height: "100px",width:"200px"}} src="https://user-images.githubusercontent.com/78024790/134765402-d630764c-22a1-403a-a1ad-2d51430a331d.png"/>
+         <h2>MUSIC PLAYER
+           <p>A web application built with with vanilla-js, html and css  </p>
+           <a href="https://aroma-musicplayer.netlify.app/" target="_blank"><button>VIEW PROJECT</button></a>
+           </h2>
+         </div>
          </Fade>
 
        </div>
